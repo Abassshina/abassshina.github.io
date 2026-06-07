@@ -1,248 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Abass Shina Sulaiman</title>
-
+<title>Abass Shina Sulaiman | Portfolio</title>
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
-}
-
-body{
-background:#f4f6f8;
-color:#333;
-}
-
-header{
-background:#0B5D3B;
-color:white;
-padding:80px 10%;
-}
-
-.hero{
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:40px;
-flex-wrap:wrap;
-}
-
-.hero img{
-width:280px;
-border-radius:15px;
-box-shadow:0 4px 20px rgba(0,0,0,0.2);
-}
-
-.hero-text{
-max-width:700px;
-}
-
-.hero-text h1{
-font-size:48px;
-margin-bottom:10px;
-}
-
-.hero-text h2{
-font-size:24px;
-font-weight:normal;
-margin-bottom:20px;
-}
-
-.hero-text p{
-font-size:18px;
-line-height:1.6;
-}
-
-.button{
-display:inline-block;
-margin-top:20px;
-padding:12px 24px;
-background:#D4AF37;
-color:black;
-text-decoration:none;
-font-weight:bold;
-border-radius:5px;
-}
-
-section{
-padding:70px 10%;
-}
-
-.section-title{
-font-size:32px;
-margin-bottom:30px;
-color:#0B5D3B;
-}
-
-.cards{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.card{
-flex:1;
-min-width:250px;
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-.card h3{
-margin-bottom:15px;
-color:#0B5D3B;
-}
-
-.project{
-background:white;
-padding:30px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-footer{
-background:#0B5D3B;
-color:white;
-text-align:center;
-padding:20px;
-}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial,sans-serif}
+body{background:#f5f7fa;color:#333;line-height:1.6}
+nav{position:sticky;top:0;background:#fff;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.logo{font-size:24px;font-weight:700;color:#0B5D3B}
+nav ul{display:flex;list-style:none;gap:24px}
+nav a{text-decoration:none;color:#333;font-weight:600}
+.hero{background:#0B5D3B;color:#fff;padding:80px 8%;display:flex;align-items:center;gap:50px;flex-wrap:wrap}
+.hero img{width:280px;height:280px;object-fit:cover;border-radius:50%;border:6px solid #fff}
+.hero-text{max-width:700px}
+.hero h1{font-size:52px;margin-bottom:10px}
+.hero h2{font-size:28px;font-weight:400;margin-bottom:20px}
+.btn{display:inline-block;padding:12px 22px;border-radius:6px;text-decoration:none;margin-right:10px;margin-top:15px}
+.primary{background:#D4AF37;color:#000}
+.secondary{background:#fff;color:#0B5D3B}
+.section{padding:70px 8%}
+.title{font-size:36px;color:#0B5D3B;margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#fff;padding:25px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.card h3{color:#0B5D3B;margin-bottom:12px}
+.stat{background:#0B5D3B;color:#fff;text-align:center}
+.project a{display:inline-block;margin-top:15px;padding:10px 16px;background:#0B5D3B;color:#fff;text-decoration:none;border-radius:5px}
+.contact a{display:inline-block;margin:8px;padding:12px 18px;background:#0B5D3B;color:#fff;text-decoration:none;border-radius:5px}
+footer{background:#0B5D3B;color:#fff;text-align:center;padding:25px}
 </style>
-
 </head>
-
 <body>
 
-<header>
-
-<div class="hero">
-
-<img src="image.png" alt="Abass Shina Sulaiman">
-
-<div class="hero-text">
-
-<h1>ABASS SHINA SULAIMAN</h1>
-
-<h2>
-Business Analyst | Process Improvement & Financial Operations Specialist
-</h2>
-
-<p>
-Helping organizations optimize business processes and financial operations through technology, process improvement and business analysis.
-</p>
-
-<a href="#projects" class="button">View Projects</a>
-
-</div>
-
-</div>
-
-</header>
-
-<section>
-
-<h2 class="section-title">About Me</h2>
-
-<p>
-I am a Business Analyst and Accountant with experience in payments, payroll, revenue systems, financial operations, process improvement, requirements engineering and digital transformation initiatives. I help organizations identify challenges, optimize processes and implement solutions that improve efficiency and business performance.
-</p>
-
-</section>
-
-<section>
-
-<h2 class="section-title">Core Expertise</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Business Analysis</h3>
-<p>
-Requirements Gathering, Process Mapping, Stakeholder Management, Business Requirements Documentation and Solution Design.
-</p>
-</div>
-
-<div class="card">
-<h3>Process Optimization & Automation</h3>
-<p>
-Workflow Design, Process Improvement, Digital Transformation and Operational Efficiency.
-</p>
-</div>
-
-<div class="card">
-<h3>Financial Operations</h3>
-<p>
-Payments, Payroll, Revenue Systems, Reconciliation and Financial Controls.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="projects">
-
-<h2 class="section-title">Featured Project</h2>
-
-<div class="project">
-
-<h3>
-Payment Reconciliation Process Optimization and Automation
-</h3>
-
-<br>
-
-<p>
-A Business Analysis project focused on improving reconciliation efficiency, reducing manual effort, strengthening financial controls and enhancing revenue assurance through process optimization and automation.
-</p>
-
-<br>
-
+<nav>
+<div class="logo">ASS</div>
 <ul>
-<li>AS-IS Process Analysis</li>
-<li>TO-BE Process Design</li>
-<li>BPMN Diagram</li>
-<li>Business Requirements Document</li>
-<li>User Stories & Product Backlog</li>
-<li>Executive Dashboard Design</li>
+<li><a href="#about">About</a></li>
+<li><a href="#expertise">Expertise</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
+</nav>
 
+<section class="hero">
+<img src="image.png" alt="Abass Shina Sulaiman">
+<div class="hero-text">
+<h1>ABASS SHINA SULAIMAN</h1>
+<h2>Business Analyst | Payments, Payroll & Financial Operations Specialist</h2>
+<p>I help organizations solve business and financial process challenges through business analysis, process optimization and technology-driven solutions. My experience spans payments, payroll, revenue systems, reconciliation and digital transformation initiatives.</p>
+<a class="btn primary" href="#projects">View Projects</a>
+<a class="btn secondary" href="mailto:Abassshinasulaiman@gmail.com">Contact Me</a>
 </div>
-
 </section>
 
-<section>
+<section class="section" id="about">
+<h2 class="title">About Me</h2>
+<p>I am a Business Analyst and Accountant with experience in payments, payroll, revenue systems, financial operations, process improvement, requirements engineering and digital transformation initiatives. I bridge the gap between business needs and technology solutions, helping organizations improve efficiency, strengthen controls and achieve measurable results.</p>
+</section>
 
-<h2 class="section-title">Contact</h2>
+<section class="section">
+<h2 class="title">Capability Areas</h2>
+<div class="grid">
+<div class="card stat"><h3>Business Analysis</h3><p>Requirements & Solution Design</p></div>
+<div class="card stat"><h3>Process Optimization</h3><p>Workflow Improvement</p></div>
+<div class="card stat"><h3>Financial Operations</h3><p>Payments & Payroll</p></div>
+<div class="card stat"><h3>Digital Transformation</h3><p>Technology Enablement</p></div>
+</div>
+</section>
 
-<p><strong>WhatsApp:</strong> +2348103982298</p>
+<section class="section" id="expertise">
+<h2 class="title">Core Expertise</h2>
+<div class="grid">
+<div class="card"><h3>Business Analysis</h3><p>Requirements Gathering, BRDs, User Stories, Stakeholder Management, Process Mapping and Solution Design.</p></div>
+<div class="card"><h3>Process Optimization & Automation</h3><p>Workflow Design, Operational Efficiency, Automation Opportunities and Process Improvement.</p></div>
+<div class="card"><h3>Financial Operations</h3><p>Payments, Payroll, Revenue Systems, Reconciliation, Financial Controls and Revenue Assurance.</p></div>
+</div>
+</section>
 
-<br>
+<section class="section" id="projects">
+<h2 class="title">Projects</h2>
+<div class="grid">
+<div class="card project">
+<h3>Payment Reconciliation Process Optimization and Automation</h3>
+<p>Business Analysis project focused on automating reconciliation, reducing manual effort and strengthening financial controls.</p>
+<a href="payment-reconciliation.html">View Project</a>
+</div>
+<div class="card project">
+<h3>Revenue Collection Automation Framework</h3>
+<p>Improving revenue collection efficiency, monitoring and reporting processes.</p>
+<a href="#">Coming Soon</a>
+</div>
+<div class="card project">
+<h3>E‑Recruitment System</h3>
+<p>Digital recruitment solution designed to streamline hiring and candidate management.</p>
+<a href="#">Coming Soon</a>
+</div>
+</div>
+</section>
 
-<p><strong>LinkedIn:</strong> Add your LinkedIn URL</p>
-
-<br>
-
-<p><strong>Email:</strong> Add your Email Address</p>
-
+<section class="section contact" id="contact">
+<h2 class="title">Contact</h2>
+<a href="mailto:Abassshinasulaiman@gmail.com">Email Me</a>
+<a href="https://wa.me/2348103982298">WhatsApp</a>
+<a href="#">LinkedIn</a>
 </section>
 
 <footer>
-
-© 2026 Abass Shina Sulaiman
-
+<p>© 2026 Abass Shina Sulaiman | Business Analyst</p>
 </footer>
 
 </body>
-
 </html>
