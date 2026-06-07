@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Payment Reconciliation Process Optimization and Automation</title>
 
 <style>
@@ -14,7 +11,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Segoe UI, Arial, sans-serif;
 }
 
 body{
@@ -23,83 +20,146 @@ color:#333;
 line-height:1.7;
 }
 
-header{
+.hero{
 background:#0B5D3B;
 color:white;
 padding:80px 10%;
 }
 
-header h1{
-font-size:48px;
+.hero h1{
+font-size:60px;
 margin-bottom:20px;
 }
 
-header p{
-font-size:20px;
-max-width:900px;
+.hero p{
+font-size:22px;
+max-width:1000px;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 30px;
+background:#D4AF37;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
 }
 
 .container{
 width:90%;
-max-width:1200px;
+max-width:1400px;
 margin:auto;
-padding:60px 0;
+padding:50px 0;
 }
 
-.section{
+.card{
 background:white;
-padding:30px;
-margin-bottom:25px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.08);
+padding:40px;
+margin-bottom:40px;
+border-radius:12px;
+box-shadow:0 3px 12px rgba(0,0,0,0.08);
 }
 
-.section h2{
+h2{
 color:#0B5D3B;
 margin-bottom:20px;
+font-size:38px;
 }
 
-.process{
-background:#f8f9fa;
-padding:20px;
-border-left:5px solid #0B5D3B;
-font-weight:bold;
+h3{
+color:#0B5D3B;
+margin-bottom:15px;
+margin-top:30px;
+}
+
+.diagram{
+width:100%;
+border-radius:10px;
+border:1px solid #ddd;
+margin-top:20px;
 }
 
 .kpi-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
+margin-top:20px;
 }
 
 .kpi{
 background:#0B5D3B;
 color:white;
-padding:25px;
+padding:30px;
 border-radius:10px;
 text-align:center;
 }
 
 .kpi h3{
-font-size:32px;
+color:white;
+margin:0;
+font-size:22px;
 }
 
-.btn{
-display:inline-block;
-margin-top:15px;
-padding:12px 24px;
-background:#D4AF37;
-color:black;
+.kpi p{
+margin-top:10px;
+font-size:16px;
+}
+
+.deliverables{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+.deliverables th{
+background:#0B5D3B;
+color:white;
+padding:15px;
+text-align:left;
+}
+
+.deliverables td{
+padding:15px;
+border:1px solid #ddd;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.skill-card{
+background:#f8f9fa;
+padding:25px;
+border-radius:10px;
+border-left:5px solid #0B5D3B;
+}
+
+.downloads{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+margin-top:20px;
+}
+
+.downloads a{
+background:#0B5D3B;
+color:white;
+padding:12px 20px;
 text-decoration:none;
-font-weight:bold;
-border-radius:5px;
+border-radius:6px;
 }
 
 footer{
 background:#0B5D3B;
 color:white;
 text-align:center;
-padding:20px;
+padding:30px;
+margin-top:50px;
 }
 
 </style>
@@ -108,195 +168,243 @@ padding:20px;
 
 <body>
 
-<header>
+<section class="hero">
 
 <h1>Payment Reconciliation Process Optimization and Automation</h1>
 
 <p>
-A Business Analysis project focused on improving reconciliation efficiency, reducing manual effort, strengthening financial controls, and enhancing revenue assurance through process optimization and automation.
+A Business Analysis project focused on improving reconciliation efficiency,
+reducing manual effort, strengthening financial controls and enhancing revenue assurance through process optimization and automation.
 </p>
 
-<a href="index.html" class="btn">Back to Portfolio</a>
+<a href="index.html" class="btn">← Back to Portfolio</a>
 
-</header>
+</section>
 
 <div class="container">
 
-<div class="section">
+<div class="card">
 
 <h2>Business Problem</h2>
 
 <p>
-Organizations receive payments through multiple channels such as bank transfers, payment gateways, POS terminals and online platforms. Finance teams often spend significant time manually reconciling transactions, resulting in delayed reporting, unmatched transactions, operational inefficiencies and increased risk of revenue leakage.
+Organizations receive payments through multiple channels such as bank transfers,
+payment gateways, POS terminals and online platforms.
+Finance teams often spend significant time manually reconciling transactions,
+resulting in delayed reporting, unmatched transactions,
+operational inefficiencies and increased risk of revenue leakage.
 </p>
 
 </div>
 
-<div class="section">
+<div class="card">
 
 <h2>Project Objective</h2>
 
 <p>
-To optimize and automate the payment reconciliation process through automated validation, transaction matching, exception management and reporting capabilities.
+To optimize and automate the payment reconciliation process through automated validation,
+transaction matching, exception management and reporting capabilities.
 </p>
 
 </div>
 
-<div class="section">
+<div class="card">
 
 <h2>Current State (AS-IS)</h2>
 
-<div class="process">
+<p>
+The existing reconciliation process relied heavily on manual intervention,
+creating delays, reconciliation errors and reporting inefficiencies.
+</p>
 
-Customer Payment<br>
-↓<br>
-Bank<br>
-↓<br>
-Payment Gateway<br>
-↓<br>
-Finance Team<br>
-↓<br>
-Manual Reconciliation<br>
-↓<br>
-Reporting
+<img src="AS IS Process.png" class="diagram">
 
 </div>
 
-</div>
-
-<div class="section">
+<div class="card">
 
 <h2>Future State (TO-BE)</h2>
 
-<div class="process">
+<p>
+The future-state process introduces automated validation,
+matching engines, exception handling and automated reporting.
+</p>
 
-Customer Payment<br>
-↓<br>
-Payment Gateway<br>
-↓<br>
-Validation Engine<br>
-↓<br>
-Matching Engine<br>
-↓<br>
-Exception Queue<br>
-↓<br>
-Finance Review<br>
-↓<br>
-Automated Reporting
+<img src="BPMN TO BE PROCESS.png" class="diagram">
 
 </div>
 
-</div>
+<div class="card">
 
-<div class="section">
+<h2>Process Diagrams</h2>
 
-<h2>Project Deliverables</h2>
+<h3>BPMN Diagram</h3>
 
-<ul>
+<img src="BPMN TO BE PROCESS.png" class="diagram">
 
-<li>Stakeholder Analysis</li>
+<h3>Swimlane Diagram</h3>
 
-<li>Business Requirements Document (BRD)</li>
+<img src="SWIMLANE TO BE PROCESS.png" class="diagram">
 
-<li>User Stories & Product Backlog</li>
+<h3>Workflow Diagram</h3>
 
-<li>AS-IS Process Mapping</li>
-
-<li>TO-BE Process Design</li>
-
-<li>BPMN Diagram</li>
-
-<li>Swimlane Diagram</li>
-
-<li>Workflow Diagram</li>
-
-<li>Dashboard Requirements Document</li>
-
-<li>Executive Dashboard Design</li>
-
-</ul>
+<img src="WORKFLOW DIAGRAM.png" class="diagram">
 
 </div>
 
-<div class="section">
+<div class="card">
 
-<h2>Key Performance Indicators</h2>
+<h2>Executive Dashboard Design</h2>
+
+<p>
+A management dashboard was designed to provide real-time visibility into reconciliation performance,
+exception management, settlement monitoring and revenue assurance.
+</p>
+
+<img src="DASHBOARD.png" class="diagram">
+
+</div>
+
+<div class="card">
+
+<h2>Expected Business Benefits</h2>
 
 <div class="kpi-grid">
 
 <div class="kpi">
+<h3>80%</h3>
+<p>Reduction in Manual Reconciliation Effort</p>
+</div>
+
+<div class="kpi">
 <h3>95%</h3>
-<p>Reconciliation Rate</p>
+<p>Automated Transaction Matching Rate</p>
 </div>
 
 <div class="kpi">
-<h3>98%</h3>
-<p>Settlement Accuracy</p>
-</div>
-
-<div class="kpi">
-<h3>&lt;5%</h3>
-<p>Exception Rate</p>
+<h3>90%</h3>
+<p>Reduction in Reconciliation Exceptions</p>
 </div>
 
 <div class="kpi">
 <h3>100%</h3>
-<p>Reporting Availability</p>
+<p>Real-Time Reporting Availability</p>
 </div>
 
 </div>
 
 </div>
 
-<div class="section">
+<div class="card">
 
-<h2>Expected Benefits</h2>
+<h2>Business Analyst Deliverables</h2>
 
-<ul>
+<table class="deliverables">
 
-<li>Improved reconciliation efficiency</li>
+<tr>
+<th>Deliverable</th>
+<th>Status</th>
+</tr>
 
-<li>Reduced manual effort</li>
+<tr>
+<td>Business Requirements Document (BRD)</td>
+<td>Completed</td>
+</tr>
 
-<li>Faster exception resolution</li>
+<tr>
+<td>AS-IS Process Analysis</td>
+<td>Completed</td>
+</tr>
 
-<li>Improved financial controls</li>
+<tr>
+<td>TO-BE Process Design</td>
+<td>Completed</td>
+</tr>
 
-<li>Enhanced revenue assurance</li>
+<tr>
+<td>BPMN Diagram</td>
+<td>Completed</td>
+</tr>
 
-<li>Improved operational transparency</li>
+<tr>
+<td>Swimlane Diagram</td>
+<td>Completed</td>
+</tr>
 
-<li>Better decision-making through reporting</li>
+<tr>
+<td>Workflow Diagram</td>
+<td>Completed</td>
+</tr>
 
-</ul>
+<tr>
+<td>User Stories</td>
+<td>Completed</td>
+</tr>
+
+<tr>
+<td>Dashboard Requirements</td>
+<td>Completed</td>
+</tr>
+
+<tr>
+<td>Dashboard Design</td>
+<td>Completed</td>
+</tr>
+
+</table>
 
 </div>
 
-<div class="section">
+<div class="card">
 
 <h2>Skills Demonstrated</h2>
 
-<ul>
+<div class="skills">
 
-<li>Business Analysis</li>
+<div class="skill-card">
+<h3>Business Analysis</h3>
+<p>Requirements gathering, stakeholder engagement and solution definition.</p>
+</div>
 
-<li>Requirements Gathering</li>
+<div class="skill-card">
+<h3>Process Mapping</h3>
+<p>AS-IS analysis, TO-BE design and process improvement initiatives.</p>
+</div>
 
-<li>Stakeholder Management</li>
+<div class="skill-card">
+<h3>Financial Operations</h3>
+<p>Payment reconciliation, controls, revenue assurance and reporting.</p>
+</div>
 
-<li>Process Mapping</li>
+<div class="skill-card">
+<h3>Process Automation</h3>
+<p>Validation engines, matching engines and exception management workflows.</p>
+</div>
 
-<li>Process Optimization</li>
+</div>
 
-<li>Financial Operations</li>
+</div>
 
-<li>Payments & Reconciliation</li>
+<div class="card">
 
-<li>Dashboard Design</li>
+<h2>Project Documents</h2>
 
-<li>Business Process Modelling</li>
+<p>
+Project artefacts and supporting documentation.
+Upload the documents later and connect them using the links below.
+</p>
 
-</ul>
+<div class="downloads">
+
+<a href="#">Business Requirements Document</a>
+
+<a href="#">Dashboard Requirements</a>
+
+<a href="#">Presentation Deck</a>
+
+<a href="#">Sample Reconciliation Data</a>
+
+</div>
 
 </div>
 
@@ -304,10 +412,11 @@ Automated Reporting
 
 <footer>
 
-© 2026 Abass Shina Sulaiman
+<p>
+© 2026 Abass Shina Sulaiman | Business Analysis Portfolio
+</p>
 
 </footer>
 
 </body>
-
 </html>
