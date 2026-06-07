@@ -1,113 +1,424 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abass Shina Sulaiman | Portfolio</title>
+
+<title>Abass Shina Sulaiman | Business Analyst Portfolio</title>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial,sans-serif}
-body{background:#f5f7fa;color:#333;line-height:1.6}
-nav{position:sticky;top:0;background:#fff;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,.08)}
-.logo{font-size:24px;font-weight:700;color:#0B5D3B}
-nav ul{display:flex;list-style:none;gap:24px}
-nav a{text-decoration:none;color:#333;font-weight:600}
-.hero{background:#0B5D3B;color:#fff;padding:80px 8%;display:flex;align-items:center;gap:50px;flex-wrap:wrap}
-.hero img{width:280px;height:280px;object-fit:cover;border-radius:50%;border:6px solid #fff}
-.hero-text{max-width:700px}
-.hero h1{font-size:52px;margin-bottom:10px}
-.hero h2{font-size:28px;font-weight:400;margin-bottom:20px}
-.btn{display:inline-block;padding:12px 22px;border-radius:6px;text-decoration:none;margin-right:10px;margin-top:15px}
-.primary{background:#D4AF37;color:#000}
-.secondary{background:#fff;color:#0B5D3B}
-.section{padding:70px 8%}
-.title{font-size:36px;color:#0B5D3B;margin-bottom:25px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.card{background:#fff;padding:25px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.08)}
-.card h3{color:#0B5D3B;margin-bottom:12px}
-.stat{background:#0B5D3B;color:#fff;text-align:center}
-.project a{display:inline-block;margin-top:15px;padding:10px 16px;background:#0B5D3B;color:#fff;text-decoration:none;border-radius:5px}
-.contact a{display:inline-block;margin:8px;padding:12px 18px;background:#0B5D3B;color:#fff;text-decoration:none;border-radius:5px}
-footer{background:#0B5D3B;color:#fff;text-align:center;padding:25px}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',Arial,sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+line-height:1.6;
+}
+
+nav{
+position:sticky;
+top:0;
+background:#ffffff;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#0B5D3B;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:600;
+}
+
+.hero{
+background:#0B5D3B;
+color:white;
+padding:60px 8%;
+display:flex;
+align-items:center;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.hero img{
+width:280px;
+height:280px;
+object-fit:cover;
+border-radius:50%;
+border:6px solid white;
+}
+
+.hero-text{
+max-width:700px;
+}
+
+.hero h1{
+font-size:52px;
+margin-bottom:10px;
+}
+
+.hero h2{
+font-size:28px;
+font-weight:400;
+margin-bottom:20px;
+}
+
+.hero-buttons{
+margin-top:25px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 26px;
+border-radius:8px;
+text-decoration:none;
+margin-right:10px;
+margin-top:10px;
+font-weight:600;
+}
+
+.primary{
+background:#D4AF37;
+color:#000;
+}
+
+.secondary{
+background:#fff;
+color:#0B5D3B;
+}
+
+.section{
+padding:70px 8%;
+}
+
+.title{
+font-size:36px;
+color:#0B5D3B;
+margin-bottom:25px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 2px 12px rgba(0,0,0,0.08);
+}
+
+.card h3{
+color:#0B5D3B;
+margin-bottom:12px;
+}
+
+.stat{
+background:#0B5D3B;
+color:white;
+text-align:center;
+}
+
+.stat h3{
+color:white;
+}
+
+.project a{
+display:inline-block;
+margin-top:15px;
+padding:10px 16px;
+background:#0B5D3B;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+
+.contact a{
+display:inline-block;
+margin:10px;
+padding:14px 20px;
+background:#0B5D3B;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+
+footer{
+background:#0B5D3B;
+color:white;
+text-align:center;
+padding:25px;
+}
+
 </style>
+
 </head>
+
 <body>
 
 <nav>
+
 <div class="logo">ASS</div>
+
 <ul>
 <li><a href="#about">About</a></li>
 <li><a href="#expertise">Expertise</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
+
 </nav>
 
 <section class="hero">
+
 <img src="image.png" alt="Abass Shina Sulaiman">
+
 <div class="hero-text">
+
 <h1>ABASS SHINA SULAIMAN</h1>
-<h2>Business Analyst | Payments, Payroll & Financial Operations Specialist</h2>
-<p>I help organizations solve business and financial process challenges through business analysis, process optimization and technology-driven solutions. My experience spans payments, payroll, revenue systems, reconciliation and digital transformation initiatives.</p>
-<a class="btn primary" href="#projects">View Projects</a>
-<a class="btn secondary" href="mailto:Abassshinasulaiman@gmail.com">Contact Me</a>
+
+<h2>
+Business Analyst | Payments, Payroll & Financial Operations Specialist
+</h2>
+
+<p>
+I help organizations improve business performance through business analysis,
+process optimization, financial operations improvement and technology-driven
+solutions. My experience spans payments, payroll, reconciliation, revenue
+management, process automation and digital transformation initiatives.
+</p>
+
+<p style="margin-top:15px;">
+📧 Abassshinasulaiman@gmail.com
+</p>
+
+<div class="hero-buttons">
+
+<a class="btn primary"
+href="Abass_Shina_BA%20CV.pdf"
+target="_blank">
+📄 Download CV
+</a>
+
+<a class="btn secondary"
+href="#projects">
+View Projects
+</a>
+
+<a class="btn secondary"
+href="https://wa.me/2348103982298"
+target="_blank">
+WhatsApp
+</a>
+
 </div>
+
+</div>
+
 </section>
 
 <section class="section" id="about">
+
 <h2 class="title">About Me</h2>
-<p>I am a Business Analyst and Accountant with experience in payments, payroll, revenue systems, financial operations, process improvement, requirements engineering and digital transformation initiatives. I bridge the gap between business needs and technology solutions, helping organizations improve efficiency, strengthen controls and achieve measurable results.</p>
+
+<p>
+I am a Business Analyst and Accounting professional with experience in
+requirements gathering, business process analysis, stakeholder engagement,
+process optimization and financial operations. I specialize in payments,
+payroll, reconciliation, revenue systems and digital transformation
+initiatives that improve efficiency, strengthen controls and support
+better decision-making.
+</p>
+
 </section>
 
 <section class="section">
-<h2 class="title">Capability Areas</h2>
+
+<h2 class="title">Professional Highlights</h2>
+
 <div class="grid">
-<div class="card stat"><h3>Business Analysis</h3><p>Requirements & Solution Design</p></div>
-<div class="card stat"><h3>Process Optimization</h3><p>Workflow Improvement</p></div>
-<div class="card stat"><h3>Financial Operations</h3><p>Payments & Payroll</p></div>
-<div class="card stat"><h3>Digital Transformation</h3><p>Technology Enablement</p></div>
+
+<div class="card stat">
+<h3>Business Analysis</h3>
+<p>Requirements, BRDs & User Stories</p>
 </div>
+
+<div class="card stat">
+<h3>Process Optimization</h3>
+<p>Workflow Improvement & Automation</p>
+</div>
+
+<div class="card stat">
+<h3>Financial Operations</h3>
+<p>Payments, Payroll & Reconciliation</p>
+</div>
+
+<div class="card stat">
+<h3>Digital Transformation</h3>
+<p>Technology Enabled Solutions</p>
+</div>
+
+</div>
+
 </section>
 
 <section class="section" id="expertise">
+
 <h2 class="title">Core Expertise</h2>
+
 <div class="grid">
-<div class="card"><h3>Business Analysis</h3><p>Requirements Gathering, BRDs, User Stories, Stakeholder Management, Process Mapping and Solution Design.</p></div>
-<div class="card"><h3>Process Optimization & Automation</h3><p>Workflow Design, Operational Efficiency, Automation Opportunities and Process Improvement.</p></div>
-<div class="card"><h3>Financial Operations</h3><p>Payments, Payroll, Revenue Systems, Reconciliation, Financial Controls and Revenue Assurance.</p></div>
+
+<div class="card">
+<h3>Business Analysis</h3>
+<p>
+Requirements Gathering, BRDs, User Stories,
+Stakeholder Management, Process Mapping,
+BPMN and Solution Design.
+</p>
 </div>
+
+<div class="card">
+<h3>Process Optimization & Automation</h3>
+<p>
+Workflow Design, Operational Efficiency,
+Automation Opportunities and Business
+Process Improvement.
+</p>
+</div>
+
+<div class="card">
+<h3>Financial Operations</h3>
+<p>
+Payments, Payroll, Revenue Systems,
+Reconciliation, Financial Controls and
+Revenue Assurance.
+</p>
+</div>
+
+</div>
+
 </section>
 
 <section class="section" id="projects">
-<h2 class="title">Projects</h2>
+
+<h2 class="title">
+Featured Business Analysis Projects
+</h2>
+
 <div class="grid">
+
 <div class="card project">
-<h3>Payment Reconciliation Process Optimization and Automation</h3>
-<p>Business Analysis project focused on automating reconciliation, reducing manual effort and strengthening financial controls.</p>
-<a href="payment-reconciliation.html">View Project</a>
+
+<h3>
+Payment Reconciliation Process Optimization and Automation
+</h3>
+
+<p>
+A complete business analysis case study covering
+process mapping, BPMN modelling, workflow design,
+dashboard requirements, reconciliation automation
+and process optimization.
+</p>
+
+<a href="payment-reconciliation.html">
+View Case Study
+</a>
+
 </div>
+
 <div class="card project">
-<h3>Revenue Collection Automation Framework</h3>
-<p>Improving revenue collection efficiency, monitoring and reporting processes.</p>
-<a href="#">Coming Soon</a>
+
+<h3>
+Revenue Collection Automation Framework
+</h3>
+
+<p>
+Business analysis initiative focused on improving
+revenue collection, monitoring, reporting and
+operational efficiency.
+</p>
+
+<a href="#">
+Project In Progress
+</a>
+
 </div>
+
 <div class="card project">
-<h3>E‑Recruitment System</h3>
-<p>Digital recruitment solution designed to streamline hiring and candidate management.</p>
-<a href="#">Coming Soon</a>
+
+<h3>
+E-Recruitment System
+</h3>
+
+<p>
+Requirements gathering, workflow design and
+process automation for digital recruitment
+management.
+</p>
+
+<a href="#">
+Project In Progress
+</a>
+
 </div>
+
 </div>
+
 </section>
 
 <section class="section contact" id="contact">
-<h2 class="title">Contact</h2>
-<a href="mailto:Abassshinasulaiman@gmail.com">Email Me</a>
-<a href="https://wa.me/2348103982298">WhatsApp</a>
-<a href="#">LinkedIn</a>
+
+<h2 class="title">Let's Connect</h2>
+
+<a href="mailto:Abassshinasulaiman@gmail.com">
+📧 Email Me
+</a>
+
+<a href="https://wa.me/2348103982298" target="_blank">
+💬 WhatsApp
+</a>
+
+<a href="Abass_Shina_BA%20CV.pdf" target="_blank">
+📄 Download CV
+</a>
+
 </section>
 
 <footer>
-<p>© 2026 Abass Shina Sulaiman | Business Analyst</p>
+
+<p>
+© 2026 Abass Shina Sulaiman | Business Analyst Portfolio
+</p>
+
 </footer>
 
 </body>
+
 </html>
+```
