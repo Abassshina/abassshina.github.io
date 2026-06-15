@@ -64,18 +64,25 @@ gap:20px;
 
 .deliverable{
 background:white;
-padding:20px;
+padding:25px;
+border-radius:12px;
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+transition:all .3s ease;
 border-left:5px solid #0B5D3B;
-border-radius:8px;
-box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.deliverable:hover{
+transform:translateY(-5px);
+box-shadow:0 8px 25px rgba(0,0,0,.15);
 }
 
 .deliverable a{
 text-decoration:none;
 color:#333;
 font-weight:600;
+display:block;
+font-size:18px;
 }
-
 .btn{
 display:inline-block;
 padding:12px 20px;
@@ -322,10 +329,25 @@ by executive reporting and dashboard capabilities.
 <section class="section">
 
 <h2 class="title">Executive Dashboard Prototype</h2>
-
+<p style="
+max-width:900px;
+margin-bottom:25px;
+color:#666;
+">
+The executive dashboard provides management with real-time visibility into customer onboarding performance, approval trends, processing times, customer drop-off rates, KYC effectiveness, compliance reviews, and operational bottlenecks.
+</p>
 <div class="card">
 
-<img src="dashboard-preview.png" alt="Customer Onboarding Dashboard">
+<img
+src="dashboard-preview.png"
+alt="Customer Onboarding Dashboard"
+style="
+width:100%;
+max-width:1400px;
+display:block;
+margin:auto;
+border-radius:12px;
+">
 
 <p style="margin-top:20px;">
 The dashboard provides real-time visibility into onboarding performance,
@@ -337,27 +359,51 @@ KYC verification effectiveness, and compliance review activities.
 
 </section>
 
-<section class="section">
+  <section class="section">
 
-<h2 class="title">Process Models & Analysis</h2>
+<h2 class="title">Project Deliverables & Artifacts</h2>
 
 <div class="grid">
 
 <div class="deliverable">
+<a href="Business Case.pdf" target="_blank">
+📄 Business Case
+</a>
+</div>
+
+<div class="deliverable">
+<a href="Stakeholder Analysis.pdf" target="_blank">
+📄 Stakeholder Analysis
+</a>
+</div>
+
+<div class="deliverable">
+<a href="Current State Assessment.pdf" target="_blank">
+📄 Current State Assessment
+</a>
+</div>
+
+<div class="deliverable">
 <a href="AS-IS Process Model.png" target="_blank">
-Current State Process Model
+🖼️ AS-IS Process Model
 </a>
 </div>
 
 <div class="deliverable">
 <a href="GAP ANALYSIS Diagram.png" target="_blank">
-Gap Analysis
+🖼️ Gap Analysis Diagram
 </a>
 </div>
 
 <div class="deliverable">
 <a href="TO-BE PROCESS MODEL.png" target="_blank">
-Future State Process Model
+🖼️ TO-BE Process Model
+</a>
+</div>
+
+<div class="deliverable">
+<a href="DRD.pptx" target="_blank">
+📊 Dashboard Requirements Document
 </a>
 </div>
 
