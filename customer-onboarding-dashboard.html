@@ -82,6 +82,36 @@ margin-bottom:10px;
 display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:20px;
+margin-top:20px;
+}
+
+.summary-grid .card{
+background:#0B5D3B;
+color:white;
+padding:30px;
+border-radius:12px;
+text-align:center;
+}
+
+.summary-grid .card h3{
+color:white;
+margin-bottom:15px;
+font-size:22px;
+}
+
+.summary-grid .card p{
+color:white;
+}
+  @media(max-width:900px){
+.summary-grid{
+grid-template-columns:1fr 1fr;
+}
+}
+
+@media(max-width:600px){
+.summary-grid{
+grid-template-columns:1fr;
+}
 }
   
 .deliverable:hover{
@@ -238,32 +268,29 @@ by executive reporting and dashboard capabilities.
 
 </section>
 
-<section class="section">
-
-<div class="grid">
+<div class="summary-grid">
 
 <div class="card">
 <h3>Industry</h3>
 <p>Digital Banking</p>
 </div>
 
-<div class="summary-grid">
+<div class="card">
 <h3>Project Type</h3>
 <p>Business Analysis Case Study</p>
 </div>
 
-<div class="summary-grid">
+<div class="card">
 <h3>Methodology</h3>
 <p>BPMN & Process Improvement</p>
 </div>
 
-<div class="summary-grid">
+<div class="card">
 <h3>Primary Deliverable</h3>
 <p>Executive Dashboard Design</p>
 </div>
 
 </div>
-
 </section>
 <h2 class="title">Business Problem</h2>
 
